@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en-gb" class="no-js">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Coming Soon...</title>
+<link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
+<meta name="description" content="">
+<meta name="author" content="WebThemez">
+
+<link rel="stylesheet" href="/static/css/css2/bootstrap.min.css" />
+<link href="/static/css/css2/animate.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="/static/css/css2/styles.css" />
+<link href="/static/css/css2/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<!--/.header-->
+	<section id="home">
+		<div class="banner-container">
+			<div class="container">
+				<div class="row">
+					<div class="logo">
+						<a href="/">
+							<img src="/static/favicon.ico" alr='logo'/>
+						</a>
+						
+						<audio autoplay>
+  							<source src="/static/images/bk.mp3" type="audio/mpeg">
+						</audio>
+					</div>
+				</div>
+				<div class="heading text-center">
+					<h2>Coming soon!!!</h2>
+					<!-- <strong>Stay tuned!!</strong> -->
+				</div>
+				<div class="countdown styled"></div>
+				<div class="row">
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="social text-center">
+					<a href="https://www.facebook.com/tranthuc12321/">
+						<i class="fa fa-facebook"></i>
+					<a href="https://github.com/tranthuc99">
+						<i class="fa fa-github"></i>
+					</a>
+				</div>
+				<div class="clear"></div>
+				<!--CLEAR FLOATS-->
+			</div>
+		</footer>
+		<!--/.page-section-->
+		<section class="copyright">
+			<div class="container">
+				<div class="row">
+					<!-- <div class="col-sm-12 text-center"> Copyright 2018 | All Rights Reserved - <a href="https://webthemez.com/tag/free" target="_blank">Free HTML Templates</a> by WebThemez. 
+					</div> -->
+				</div>
+				<!-- / .row -->
+			</div>
+		</section>
+		<!--[if lte IE 8]>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<![endif]-->
+		<script src="/static/js/js2/modernizr-latest.js"></script>
+		<script src="/static/js/js2/jquery-1.8.2.min.js" type="text/javascript"></script>
+		<script src="/static/js/js2/bootstrap.min.js" type="text/javascript"></script>
+		<script src="/static/js/js2/jquery.nav.js" type="text/javascript"></script>
+		<script src="/static/js/js2/waypoints.js"></script>
+		<script src="/static/js/js2/Backstretch.js" type="text/javascript"></script>
+
+
+
+
+
+
+		<script>
+		$( function() {
+		        var endDate = "December  30, 2025 14:08:00";
+
+		        $('.countdown.simple').countdown({ date: endDate });
+
+		        $('.countdown.styled').countdown({
+		          date: endDate,
+		          render: function(data) {
+		            $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
+		          }
+		        });
+
+		        $('.countdown.callback').countdown({
+		          date: +(new Date) + 10000,
+		          render: function(data) {
+		            $(this.el).text(this.leadingZeros(data.sec, 2) + " sec");
+		          },
+		          onEnd: function() {
+		            $(this.el).addClass('ended');
+		          }
+		        }).on("click", function() {
+		          $(this).removeClass('ended').data('countdown').update(+(new Date) + 10000).start();
+		        });
+				
+				
+				
+		      });
+		   
+		   
+		var customScripts = {
+		 
+		    onePageNav: function () {
+
+		        $('#mainNav').onePageNav({
+		            currentClass: 'active',
+		            changeHash: false,
+		            scrollSpeed: 950,
+		            scrollThreshold: 0.2,
+		            filter: '',
+		            easing: 'swing',
+		            begin: function () {
+		                //I get fired when the animation is starting
+		            },
+		            end: function () {
+		                   //I get fired when the animation is ending
+						if(!$('#main-nav ul li:first-child').hasClass('active')){
+							$('.header').addClass('addBg');
+						}else{
+								$('.header').removeClass('addBg');
+						}
+						
+		            },
+		            scrollChange: function ($currentListItem) {
+		                //I get fired when you enter a section and I pass the list item of the section
+						if(!$('#main-nav ul li:first-child').hasClass('active')){
+							$('.header').addClass('addBg');
+						}else{
+								$('.header').removeClass('addBg');
+						}
+					}
+		        });
+				
+				$("a[href='#top']").click(function () {
+		                $("html, body").animate({ scrollTop: 0 }, "slow");
+		                return false;
+		            });
+					$("a[href='#basics']").click(function () {
+		                $("html, body").animate({ scrollTop: $('#services').offset().top}, "slow"); 
+		                return false;
+		            });
+		    },   
+			waySlide: function(){
+				  	/* Waypoints Animations
+				   ------------------------------------------------------ */		   			  			
+					$('#services').waypoint(function() {				
+					$('#services .col-md-3').addClass( 'animated fadeInUp show' );   
+					}, { offset: 800}); 
+					$('#aboutUs').waypoint(function() {				
+					$('#aboutUs').addClass( 'animated fadeInUp show' );   
+					}, { offset: 800}); 
+					$('#contactUs').waypoint(function() {				
+					$('#contactUs .parlex-back').addClass( 'animated fadeInUp show' );   
+					}, { offset: 800}); 
+					 						 
+				}, 
+		    init: function () {
+		        customScripts.onePageNav();  
+				customScripts.waySlide(); 
+		    }
+		}
+		$('document').ready(function () {
+			 $.backstretch([
+		      "/static/images/img1.jpg"
+		    , "/static/images/img2.jpg"
+		  ], {duration: 9000, fade: 1250});
+		  
+		    customScripts.init();
+			$('#services .col-md-3, #features, #aboutUs, #clients, #portfolio, #plans, #contactUs .parlex-back').css('opacity','0');
+			$( "#menuToggle" ).toggle(function() {
+			$(this).find('i').removeClass('fa-bars').addClass('fa-remove');
+			 $('#mainNav').animate({"right":"0px"}, "slow");
+			}, function() {
+			  $('#mainNav').animate({"right":"-200px"}, "slow");
+			  $(this).find('i').removeClass('fa-remove').addClass('fa-bars');
+			});	
+		});
+		</script>
+
+
+
+
+
+
+
+
+		<script type="text/javascript" src="/static/js/js2/jquery.countdown.js"></script>
+	</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#128293;Đồ án 2 - Nguyễn Trần Thức&#128293;</title>
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cf1626; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cf1626; 
+}
+</style>
+</head>
+
+<body>
+    <div class='header'>
+
+        <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="/"><li>Nhận diện 1 ảnh</li></a>
+                <a href="/comingsoon"><li>Nhận diện nhiều ảnh</li></a>
+                <a href="#"><li>Mã nguồn</li></a>
+                <a href="mailto: thuc.nt185483@sis.hust.edu.vn" target="_blank"><li>Liên hệ</li></a>
+              </ul>
+            </div>
+          </nav>
+
+        <h2 style="font-weight: bold;">
+            HỆ THỐNG NHẬN DIỆN ẢNH TRONG BỘ DỮ LIỆU CIFAR-10
+        </h2>
+        &#128293; Đồ án 2 - Nguyễn Trần Thức &#128293;
+    </div>
+    <div class='content'>
+        <div class='upload_part'>
+            Airplane &#128747;, Automobile &#128661;, Bird &#128038;, Cat &#128008;, Deer &#128062;, Dog &#128021;, Frog &#128056;, Horse &#128052;, Ship &#128674;, Truck &#128666; 
+            <div class='upload_hint' id='upload_hint'>
+                (Các định dạng ảnh được hỗ trợ: PNG, JPG và JPEG. Ảnh có kích thước vuông hoặc gần vuông sẽ dự đoán tốt hơn)
+            </div>
+            <form method="post" action="/" enctype="multipart/form-data">
+                <div class="box">
+                    <input type="file" name="file" id="file-1" class="inputfile inputfile-1"
+                        data-multiple-caption="{count} files selected" multiple />
+                    <label for="file-1">
+                    	<!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17"
+                            viewBox="0 0 20 17">
+                            <path
+                                d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z" />
+                        </svg> --> 
+                        <i class="material-icons">
+                        	add_photo_alternate
+                        </i> &nbsp;
+                        <span>Chọn 1 ảnh&hellip;</span>
+                    </label>
+                    <div class='bt'>
+                        <button class="button">Dự đoán</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class='result_part'>
+            <div class='result_title'><b>Kết quả nhận diện:</b></div>
+            {% if filename %}
+            <h1> {{ pre }} - {{ per }}% </h1>
+            <div>
+                <img style="max-width:300px; border-radius:1rem" src="{{ url_for('display_image', filename=filename) }}"
+                    alt="User Image" id="display_image">
+            </div>
+            {% endif %}
+            <p>
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+
+                {% for message in messages %}
+                {{ message }}
+                {% endfor %}
+
+                {% endif %}
+                {% endwith %}
+            </p>
+        </div>
+</body>
+
+<script src="/static/js/main.js"></script>
+
+</html>

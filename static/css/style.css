@@ -1,0 +1,355 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+a:link,a:visited ,a:hover , a:active   {
+    color: white;
+    text-decoration: underline;
+}
+
+body, html {
+          height: 100%;
+        }
+    html, body {
+        padding: 0px;
+        margin: 0px;
+        background: #35363A;
+    }
+
+.header {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: large;
+    color:white;
+
+    text-align: center;
+    padding: 10px;
+}
+
+.info
+{
+    text-align:left;
+    color:gray;
+    width:30%;
+    margin:auto;
+    padding:20px;
+    font-size:14px;
+}
+
+
+.content {
+    width: 100%;
+}
+
+.upload_part {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 10px;
+}
+
+.form-control {
+    background-color: #FEED06;
+    color: black;
+    padding: 15px;
+    font-size: 16px;
+    border: 0px;
+    border-radius: 5px;
+    -webkit-box-shadow: 6px 8px 18px -5px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 6px 8px 18px -5px rgba(0, 0, 0, 0.38);
+    box-shadow: 6px 8px 18px -5px rgba(0, 0, 0, 0.38);
+    cursor: pointer;
+}
+
+.upload_hint {
+    margin: 10px;
+    font-size: 14px;
+    color: rgb(200, 200, 200);
+}
+
+.result_part {
+    text-align: center;
+    padding: 40px;
+}
+
+.result_title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.result_id {
+    padding: 10px;
+    margin: 15px;
+    font-size: 16px;
+
+}
+
+.result_id_number {
+    margin: 15px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #FEED06;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+
+}
+
+/* style 5 */
+
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+
+/* style 1 */
+
+.inputfile-1 + label {
+    color: #f1e5e6;
+    background-color: #d3394c;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    background-color: #722040;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+/* Submit */
+
+
+.button {
+    position: relative;
+    width: 200px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #1c89ff;
+    border: solid 1px transparent;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.button:hover {
+      background-color: transparent;
+      border-color: #fff;
+      transition: all .1s ease-in-out;
+    }
+
+.bt {
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* body
+{
+  margin: 0;
+  padding: 0;
+  
+
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+} */
+
+/* #menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+} */
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #cf1626;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
