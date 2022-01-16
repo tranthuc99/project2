@@ -3,7 +3,8 @@
 ##### Giảng viên hướng dẫn: Thầy Ngô Trung Hiếu
 
 ### Công nghệ sử dụng
-#### ...
+Flask, Tensorflow Serving, Keras
+Heroku, AWS S3, Freenom
 
 ### Cài đặt trên local Window OS
 
@@ -33,7 +34,13 @@ pip install -r requirements.txt
 py app.py
 ```
 
-Chạy url: http://127.0.0.1:5000/ trên trình duyệt web!
+Nhập url: http://127.0.0.1:5000/ trên trình duyệt web!
+
+### Báo cáo LaTeX
+https://www.overleaf.com/read/nmdchvzvhxbr
+
+### Slides Beamer
+https://www.overleaf.com/read/fbzywkxtvkst
 
 ### Demo
 
