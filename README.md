@@ -3,7 +3,7 @@
 ##### Giảng viên hướng dẫn: Thầy Ngô Trung Hiếu
 
 ### Công nghệ sử dụng
-Flask, Tensorflow Serving, Keras, Heroku, AWS S3, Freenom
+Flask, Tensorflow Serving, Keras, Heroku, AWS S3, Freenom, Google Colab
 
 ### Kiến trúc hệ thống
 
@@ -49,7 +49,7 @@ https://www.overleaf.com/read/fbzywkxtvkst
 
 api: https://apimodel-da2.herokuapp.com/v1/models/cnncifar10
 
-web: http://www.ntt-project2.ml/ (https://flask4-da2.herokuapp.com/)
+web: http://www.ntt-project2.ml/ (hoặc https://flask4-da2.herokuapp.com/)
 
 ### Một số hình ảnh dự đoán
 
