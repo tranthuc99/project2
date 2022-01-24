@@ -47,3 +47,5 @@ https://www.overleaf.com/read/fbzywkxtvkst
 api: https://apimodel-da2.herokuapp.com/v1/models/cnncifar10
 
 web: http://www.ntt-project2.ml/ (https://flask4-da2.herokuapp.com/)
+
+![Preview](static/images/logoT.png)
