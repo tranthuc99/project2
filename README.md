@@ -7,7 +7,7 @@ Flask, Tensorflow Serving, Keras, Heroku, AWS S3, Freenom
 
 ### Kiến trúc hệ thống
 
-![Preview](static/images/Kien-truc.jpg)
+![Preview](static/uploads/Kien-truc.jpg)
 
 ### Cài đặt trên local Window OS
 
@@ -53,19 +53,19 @@ web: http://www.ntt-project2.ml/ (https://flask4-da2.herokuapp.com/)
 
 ### Một số hình ảnh dự đoán
 
-![Preview](static/images/demo1.png)
-![Preview](static/images/demo2.png)
-![Preview](static/images/demo3.png)
-![Preview](static/images/demo4.png)
-![Preview](static/images/demo5.png)
-![Preview](static/images/demo6.png)
-![Preview](static/images/demo7.png)
-![Preview](static/images/demo8.png)
-![Preview](static/images/demo9.png)
-![Preview](static/images/demo10.png)
-![Preview](static/images/demo11.png)
-![Preview](static/images/demo12.png)
-![Preview](static/images/demo13.png)
-![Preview](static/images/demo14.png)
-![Preview](static/images/demo15.png)
-![Preview](static/images/demo16.png)
+![Preview](static/uploads/demo1.png)
+![Preview](static/uploads/demo2.png)
+![Preview](static/uploads/demo3.png)
+![Preview](static/uploads/demo4.png)
+![Preview](static/uploads/demo5.png)
+![Preview](static/uploads/demo6.png)
+![Preview](static/uploads/demo7.png)
+![Preview](static/uploads/demo8.png)
+![Preview](static/uploads/demo9.png)
+![Preview](static/uploads/demo10.png)
+![Preview](static/uploads/demo11.png)
+![Preview](static/uploads/demo12.png)
+![Preview](static/uploads/demo13.png)
+![Preview](static/uploads/demo14.png)
+![Preview](static/uploads/demo15.png)
+![Preview](static/uploads/demo16.png)
